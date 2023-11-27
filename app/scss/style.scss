@@ -1,3 +1,20 @@
-body{
-  background-color: #000;
+@import "global";
+@import "vars";
+@import "fonts";
+
+.header__avialable{
+  max-width:100%;
+  background-color: $yellow;
+  position: relative;
+  padding: 12px 20px;
+  text-align: center;
+  margin-bottom: 1px;
+  span{
+    position:absolute;
+    right:25px;
+  }
+}
+.header__inner{
+  background-image: url(../images/7555bc34-8f34-4537-a141-65840daf94c0.jpg);
+  width: 100%;
 }
