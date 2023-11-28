@@ -1,7 +1,9 @@
 @import "global";
 @import "vars";
 @import "fonts";
-
+.header{
+  position: relative;
+}
 .header__avialable{
   max-width:100%;
   background-color: $yellow;
@@ -16,5 +18,51 @@
 }
 .header__inner{
   background-image: url(../images/7555bc34-8f34-4537-a141-65840daf94c0.jpg);
-  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 811px;
+  &-box{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+  }
+}
+.header__menu{
+  margin-right: 90px;
+  ul{
+    display: flex;
+    justify-content: space-between;
+  }
+  li + li{
+    padding-left: 67px;
+  }
+}
+.basket{
+  position: relative;
+  span{
+    position: absolute;
+    padding:5px 7px;
+    background-color: $yellow;
+    font-size: 10px;
+    font-weight: 700;
+    top:-10px;
+    right:-17px;
+  }
+}
+.header__total{
+  position: absolute;
+  bottom:45px;
+}
+.header__title{
+  font-size: 81px;
+  line-height: 81px;
+  color:#fff;
+  max-width:420px;
+  margin-bottom: 70px;
+}
+.header__btn{
+  background-color: $blue;
+  padding: 15px 31px;
+  border-radius: 25px;
 }
