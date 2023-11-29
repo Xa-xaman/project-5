@@ -37,6 +37,9 @@
   li + li{
     padding-left: 67px;
   }
+  a{
+    color:#fff;
+  }
 }
 .basket{
   position: relative;
@@ -61,8 +64,91 @@
   max-width:420px;
   margin-bottom: 70px;
 }
-.header__btn{
+.a-button{
   background-color: $blue;
   padding: 15px 31px;
+  color:#fff;
   border-radius: 25px;
+}
+// start wellness
+
+.wellness{
+  background-color: $darkblue;
+  padding: 150px 0 140px;
+  display: flex;
+  justify-content: center;
+  &__inner{
+  color:#fff;
+  text-align: center;
+  }
+  &__text{
+    margin-top: 40px;
+    font-size: 36px;
+    line-height: 46px;
+    width: 830px;
+  }
+  &__title{
+    color:$yellow;
+  }
+}
+
+// end wellness
+// start wellness
+.promises{
+  background-color: #EDF3F6;
+  &__inner{
+    color:#031622;
+    padding: 75px 0 95px;
+  }
+  &__title{
+    text-align: center;
+    font-size: 38px;
+    line-height: 40px;
+  }
+}
+.promises__items{
+  margin-top: 55px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+.promises__item{
+  width: 270px;
+  text-align: center;
+  &+ .promises__item{
+    width: 300px;
+  }
+  &-title{
+    font-size: 24px;
+    line-height: 26px;
+    margin-top: 15px;
+  }
+  &-text{
+    margin-top: 40px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.products{
+  padding: 100px 0 180px;
+  &__total{
+    text-align: center;
+  }
+  &__title{
+    margin-top: 45px;
+    font-size: 36px;
+    line-height: 40px;
+  }
+  &__box{
+    margin-top: 60px;
+    display: flex;
+  }
+}
+.product__photo{
+  padding: 200px 0 142px;
+  background-color: $darkblue;
+}
+.product__info{
+  background-color: #EDF3F6;
 }
