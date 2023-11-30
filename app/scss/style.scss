@@ -146,9 +146,60 @@
   }
 }
 .product__photo{
-  padding: 200px 0 142px;
-  background-color: $darkblue;
+  padding: 200px 100px 142px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  &-title{
+    color:#fff;
+    font-size: 45px;
+    line-height: 50px;
+    text-align: center;
+    width: 250px;
+  }
+  &-btn{
+    margin-top: 50px;
+  }
 }
 .product__info{
-  background-color: #EDF3F6;
+  background-color: #cfe7f3;
+  padding: 80px 60px 50px ;
+  &-title{
+    font-size: 24px;
+    line-height: 32px;
+    color:$black;
+  }
+  &-price{
+    font-size: 18px;
+    line-height: 25px;
+    color:$darkblue;
+  }
+  &-img{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: 230px;
+    height: 270px;
+    width: 476px;
+  }
+  &-btn{
+    padding: 15px 458px;
+  }
+}
+.product__info-down{
+  background-color: #edf3f6;
+}
+
+.multitask{
+  background-color:$lightblue;
+  padding: 125px 300px 235px;
+  text-align: center;
+  &__title{
+    color:$black;
+    margin-top: 30px;
+    font-size: 36px;
+    line-height: 40px;
+    padding: 0 120px;
+  }
 }
