@@ -17,7 +17,7 @@
   }
 }
 .header__inner{
-  background-image: url(../images/7555bc34-8f34-4537-a141-65840daf94c0.jpg);
+  background-color: $blue-t;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -87,17 +87,14 @@
     line-height: 46px;
     width: 830px;
   }
-  &__title{
-    color:$yellow;
-  }
 }
 
 // end wellness
 // start wellness
 .promises{
-  background-color: #EDF3F6;
+  background-color: $lightblue;
   &__inner{
-    color:#031622;
+    color:$black;
     padding: 75px 0 95px;
   }
   &__title{
@@ -147,6 +144,7 @@
 }
 .product__photo{
   padding: 200px 100px 142px;
+  height: 500px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -165,6 +163,7 @@
 .product__info{
   background-color: #cfe7f3;
   padding: 80px 60px 50px ;
+  height: 500px;
   &-title{
     font-size: 24px;
     line-height: 32px;
@@ -201,5 +200,114 @@
     font-size: 36px;
     line-height: 40px;
     padding: 0 120px;
+  }
+}
+
+.customer{
+  background-color: $darkblue;
+  padding: 115px 20px 200px;
+  position: relative;
+  &__title{
+  margin-top: 50px;
+  color:#fff;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  }
+}
+.customer__frame{
+  background-color: #fff;
+  width: 420px;
+  padding: 50px;
+  position: absolute;
+  right:650px;
+  top:425px;
+  display: none;
+  &-text{
+    font-size: 22px;
+    line-height: 24px;
+    color:$black;
+    margin-bottom: 145px;
+  }
+  &-name{
+    font-size: 20px;
+    font-weight: 700;
+  }
+  &-logo{
+    svg{
+      fill:$yellow;
+    }
+  }
+}
+.customer__box{
+  display: flex;
+  justify-content: space-between;
+} 
+.customer__items{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+.customer__item{
+  width: 755px;
+  height: 625px;
+  background-color: $yellow;
+  &-right{
+    background-color: $blue-t;
+  }
+  &:hover{
+    background-color: rgba(254, 208, 151, 0.7);
+    .customer__frame{
+      display: block;
+    }
+  }
+  &-right:hover{
+    background-color: rgba(57, 96, 134, 0.7);
+  }
+}
+.proven__inner{
+  padding: 90px 0 45px;  
+  margin-left: 80px;
+  &-item{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 947px;
+    height: 718px;
+    position: relative;
+  }
+  &-flag{
+    position: absolute;
+    bottom: 35px;
+    right: -233px;
+    width: 416px;
+    background-color: $lightblue;
+    padding: 80px 52px 20px;
+  }
+  &-title{
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 500;
+  }
+  &-text{
+    margin-top: 70px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  &-btn{
+    margin-top: 120px;
+    padding: 17px 35px;
+    border:1px solid $black;
+    color:$black;
+    border-radius:30px;
+  }
+}
+.proven__inner-down{
+  margin-top: 175px;
+  margin-left: 263px;
+  .proven__inner-flag{
+    left:-233px;
+    bottom: 170px;
+    background-color: $lightyellow;
   }
 }

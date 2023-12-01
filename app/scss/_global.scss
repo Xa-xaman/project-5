@@ -1,3 +1,5 @@
+@import "vars";
+
 html{
   box-sizing: border-box;
 }
@@ -31,4 +33,11 @@ li{
 }
 .container{
   padding: 0 79px;
+}
+.total{
+  color:$yellow;
+  text-align: center;
+}
+.container__ban{
+  padding: 0 178px 0 187px;
 }
